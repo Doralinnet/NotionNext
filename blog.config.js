@@ -182,7 +182,7 @@ const BLOG = {
     'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css', // 深色模式主题
 
   CODE_MAC_BAR: process.env.NEXT_PUBLIC_CODE_MAC_BAR || true, // 代码左上角显示mac的红黄绿图标
-  CODE_LINE_NUMBERS: process.env.NEXT_PUBLIC_CODE_LINE_NUMBERS || false, // 是否显示行号
+  CODE_LINE_NUMBERS: process.env.NEXT_PUBLIC_CODE_LINE_NUMBERS || true, // 是否显示行号
   CODE_COLLAPSE: process.env.NEXT_PUBLIC_CODE_COLLAPSE || true, // 是否支持折叠代码框
   CODE_COLLAPSE_EXPAND_DEFAULT:
     process.env.NEXT_PUBLIC_CODE_COLLAPSE_EXPAND_DEFAULT || true, // 折叠代码默认是展开状态
@@ -525,7 +525,7 @@ const BLOG = {
   // 网站图片
   IMG_LAZY_LOAD_PLACEHOLDER:
     process.env.NEXT_PUBLIC_IMG_LAZY_LOAD_PLACEHOLDER ||
-    'data:image/https://pic.rmb.bdstatic.com/bjh/240710/c68b0f75d4719af55a1915e8e97bb6445445.jpeg', // 懒加载占位图片地址，支持base64或url
+    'https://pic.rmb.bdstatic.com/bjh/240710/c68b0f75d4719af55a1915e8e97bb6445445.jpeg', // 懒加载占位图片地址，支持base64或url
   IMG_URL_TYPE: process.env.NEXT_PUBLIC_IMG_TYPE || 'Notion', // 此配置已失效，请勿使用；AMAZON方案不再支持，仅支持Notion方案。 ['Notion','AMAZON'] 站点图片前缀 默认 Notion:(https://notion.so/images/xx) ， AMAZON(https://s3.us-west-2.amazonaws.com/xxx)
   IMG_SHADOW: process.env.NEXT_PUBLIC_IMG_SHADOW || false, // 文章图片是否自动添加阴影
   IMG_COMPRESS_WIDTH: process.env.NEXT_PUBLIC_IMG_COMPRESS_WIDTH || 800, // Notion图片压缩宽度
